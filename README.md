@@ -1,8 +1,8 @@
-# Rishav'S Classplus Text Extracter via X-Token or Org*phone_no.
+# CrazyMindd Classplus Text Extracter via X-Token or Org*phone_no.
 
 ## Deploy To Heroku
 
-<a href="https://heroku.com/deploy?template=https://github.com/Vivekfhfd/cphaby">
+<a href="https://heroku.com/deploy?template=https://github.com/CrazyMindd/cphaby">
      <img height="30px" src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku">
   </a>
 
