@@ -254,7 +254,7 @@ async def account_login(bot: Client, m: Message):
                         name = course['name']
                         text += f'{cnt + 1}. {name}\n'
 
-                    reply = await message.chat.ask(
+                    reply = await m.reply(
                         (
                             '**'
                             'Send index number of the course to download.\n\n'
