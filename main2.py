@@ -319,7 +319,7 @@ async def account_login(bot: Client, m: Message):
                         raise Exception('Failed to validate course selection.')
 
                 else:
-                    raise Exception('Did not found any course.')
+                    raise Exception('Did not find any courses.')
 
             else:
                 raise Exception('Failed to get courses.')
