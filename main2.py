@@ -79,7 +79,6 @@ async def account_login(bot: Client, m: Message):
 
             if res.status_code == 200:
                 res = res.json()
-
                 contents = res['data']['courseContent']
 
                 for content in contents:
