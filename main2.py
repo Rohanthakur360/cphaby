@@ -143,7 +143,7 @@ async def account_login(bot: Client, m: Message):
                 res = session.get(f'{api}/orgs/{org_code}')
 
                 if res.status_code == 200:
-                    res = res.json()
+                    res_json = res.json()
                     org_id = int(res['data']['orgId'])
 
                     data = {
