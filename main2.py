@@ -294,7 +294,7 @@ async def account_login(bot: Client, m: Message):
                             text_file = f'assets/{get_datetime_str()}.txt'
                             open(text_file, 'w').writelines(course_content)
 
-                            await client.send_document(
+                            await m.reply_document(
                                 message.chat.id,
                                 text_file,
                                 caption=caption,
