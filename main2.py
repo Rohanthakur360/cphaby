@@ -295,7 +295,7 @@ async def account_login(bot: Client, m: Message):
                             open(text_file, 'w').writelines(course_content)
 
                             await m.reply_document(
-                                message.chat.id,
+                                document=text_file,
                                 text_file,
                                 caption=caption,
                                 file_name=f"{selected_course_name}.txt",
