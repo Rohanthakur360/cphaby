@@ -158,9 +158,8 @@ async def account_login(bot: Client, m: Message):
                     res = session.post(f'{api}/otp/generate', data=json.dumps(data))
 
                     if res.status_code == 200:
-                        res = res.json()
-
-                        session_id = res['data']['sessionId']
+                        res_json = res.json()
+                        session_id = res_json['data']['sessionId']
 
                         reply = await message.chat.ask(
                             (
