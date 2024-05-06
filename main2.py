@@ -35,6 +35,7 @@ def create_html_file(filename, course_name, course_content):
             f.write(f'<p>{item}</p>\n')
         f.write('</body></html>\n')
 
+# Setting up logging
 LOGGER = logging.getLogger(__name__)
 logging.basicConfig(
     level=logging.INFO,
