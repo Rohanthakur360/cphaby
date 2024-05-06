@@ -124,8 +124,7 @@ async def account_login(bot: Client, m: Message):
                 'OR\n\n'
                 'Access Token'
                 '**'
-            ),
-        
+            ), 
         )
         creds = reply.text
     print(f"Received credentials: {creds}")  # Add this line for debugging
