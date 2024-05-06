@@ -82,7 +82,6 @@ async def account_login(bot: Client, m: Message):
                 contents = res['data']['courseContent']
 
                 for content in contents:
-
                     if content['contentType'] == 1:
                         resources = content['resources']
 
