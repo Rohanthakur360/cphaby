@@ -278,7 +278,7 @@ async def account_login(bot: Client, m: Message):
                             )
                         )
 
-                        course_content = get_course_content(session, selected_course_id)
+                        course_content = await get_course_content(session, selected_course_id)
 
                         await loader.delete()
 
