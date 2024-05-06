@@ -49,6 +49,7 @@ logging.basicConfig(
     ],
 )
 
+# Initialize the bot
 bot = Client(
     "bot",
     api_id= 27006142,
