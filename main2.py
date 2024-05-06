@@ -64,6 +64,7 @@ async def start(bot, update):
                                "**NOW:-** "
                                "Press **/classplus** to continue..\n\n")
 
+# Handler for /classplus command
 @bot.on_message(filters.command(["classplus"]))
 async def account_login(bot: Client, m: Message):
     try:
