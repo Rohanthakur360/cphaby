@@ -235,9 +235,7 @@ async def account_login(bot: Client, m: Message):
             else:
                 raise Exception('Failed to get user details.')
 
-
         if logged_in:
-
             params = {
                 'userId': user_id,
                 'tabCategoryId': 3
