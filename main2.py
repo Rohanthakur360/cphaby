@@ -298,7 +298,7 @@ async def account_login(bot: Client, m: Message):
                                 message.chat.id,
                                 text_file,
                                 caption=caption,
-                                reply_to_message_id=reply.id
+                                file_name=f"{selected_course_name}.txt",
                             )
 
                             html_file = f'assets/{get_datetime_str()}.html'
