@@ -313,7 +313,7 @@ async def account_login(bot: Client, m: Message):
                             os.remove(html_file)
 
                         else:
-                            raise Exception('Did not found any content in course.')
+                            raise Exception('Did not find any content in the course.')
 
                     else:
                         raise Exception('Failed to validate course selection.')
