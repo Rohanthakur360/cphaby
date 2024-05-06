@@ -275,8 +275,7 @@ async def account_login(bot: Client, m: Message):
                                 '**'
                                 'Extracting course...'
                                 '**'
-                            ),
-                            quote=True
+                            )
                         )
 
                         course_content = get_course_content(session, selected_course_id)
