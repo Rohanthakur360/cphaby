@@ -324,11 +324,8 @@ async def account_login(bot: Client, m: Message):
             else:
                 raise Exception('Failed to get courses.')
             
-
     except Exception as error:
-
         print(f'Error : {error}')
-
         await m.reply(
             (
                 '**'
