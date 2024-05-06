@@ -219,6 +219,7 @@ async def account_login(bot: Client, m: Message):
                     
             else:
                 raise Exception('Failed to validate credentials.') 
+                
         else:
 
             token = creds.strip()
