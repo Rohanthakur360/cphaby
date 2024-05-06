@@ -161,7 +161,7 @@ async def account_login(bot: Client, m: Message):
                         res_json = res.json()
                         session_id = res_json['data']['sessionId']
 
-                        reply = await message.chat.ask(
+                        reply = await m.reply(
                             (
                                 '**'
                                 'Send OTP ?'
