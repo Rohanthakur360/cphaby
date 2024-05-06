@@ -296,7 +296,6 @@ async def account_login(bot: Client, m: Message):
 
                             await m.reply_document(
                                 document=text_file,
-                                text_file,
                                 caption=caption,
                                 file_name=f"{selected_course_name}.txt",
                             )
