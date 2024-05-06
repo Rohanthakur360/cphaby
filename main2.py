@@ -148,11 +148,11 @@ async def account_login(bot: Client, m: Message):
 
                     data = {
                         'countryExt': '91',
-                        'mobile'    : phone_no,
-                        'viaSms'    : 1,
-                        'orgId'     : org_id,
-                        'eventType' : 'login',
-                        'otpHash'   : 'j7ej6eW5VO'
+                        'mobile': phone_no,
+                        'viaSms': 1,
+                        'orgId': org_id,
+                        'eventType': 'login',
+                        'otpHash': 'j7ej6eW5VO'
                     }
         
                     res = session.post(f'{api}/otp/generate', data=json.dumps(data))
