@@ -230,8 +230,8 @@ async def account_login(bot: Client, m: Message):
             if res.status_code == 200:
                 res = res_json.json()
                 user_id = res['data']['responseData']['user']['id']
-                logged_in = True
-            
+                logged_in = TrueTrue
+                
             else:
                 raise Exception('Failed to get user details.')
 
