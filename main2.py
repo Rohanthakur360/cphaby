@@ -244,8 +244,7 @@ async def account_login(bot: Client, m: Message):
             res = session.get(f'{api}/profiles/users/data', params=params)
 
             if res.status_code == 200:
-                res = res.json()
-
+                res_json = res.json()
                 courses = res['data']['responseData']['coursesData']
 
                 if courses:
