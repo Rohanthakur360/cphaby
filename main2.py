@@ -173,12 +173,12 @@ async def account_login(bot: Client, m: Message):
                             otp = reply.text.strip()
 
                             data = {
-                                'otp'          : otp,
-                                'sessionId'    : session_id,
-                                'orgId'        : org_id,
+                                'otp': otp,
+                                'sessionId': session_id,
+                                'orgId': org_id,
                                 'fingerprintId': 'a3ee05fbde3958184f682839be4fd0f7',
-                                'countryExt'   : '91',
-                                'mobile'       : phone_no,
+                                'countryExt': '91',
+                                'mobile': phone_no,
                             }
 
                             res = session.post(f'{api}/users/verify', data=json.dumps(data))
