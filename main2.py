@@ -207,19 +207,18 @@ async def account_login(bot: Client, m: Message):
 
                             else:
                                 raise Exception('Failed to verify OTP.')
-                            
+                                
                         else:
                             raise Exception('Failed to validate OTP.')
-                        
+                            
                     else:
                         raise Exception('Failed to generate OTP.')
-                    
+                        
                 else:
                     raise Exception('Failed to get organization Id.')
-                
+                    
             else:
                 raise Exception('Failed to validate credentials.') 
-
         else:
 
             token = creds.strip()
