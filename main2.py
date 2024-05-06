@@ -67,6 +67,9 @@ async def start(bot, update):
 @bot.on_message(filters.command(["classplus"]))
 async def account_login(bot: Client, m: Message):
     try:
+        async def get_course_content(session, course_id, folder_id=0):
+            fetched_contents = []
+       
         def get_course_content(session, course_id, folder_id=0):
 
             fetched_contents = []
