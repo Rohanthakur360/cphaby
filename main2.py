@@ -184,7 +184,7 @@ async def account_login(bot: Client, m: Message):
                             res = session.post(f'{api}/users/verify', data=json.dumps(data))
 
                             if res.status_code == 200:
-                                res = res.json()
+                                res_json = res.json()
 
                                 user_id = res['data']['user']['id']
                                 token = res['data']['token']
