@@ -298,7 +298,6 @@ async def account_login(bot: Client, m: Message):
                                 message.chat.id,
                                 text_file,
                                 caption=caption,
-                                file_name=f"{selected_course_name}.txt",
                                 reply_to_message_id=reply.id
                             )
 
