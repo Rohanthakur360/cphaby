@@ -70,10 +70,10 @@ async def account_login(bot: Client, m: Message):
         async def get_course_content(session, course_id, folder_id=0):
             fetched_contents = []
        
-        params = {
+            params = {
                 'courseId': course_id,
                 'folderId': folder_id,
-        }
+            }
 
             res = session.get(f'{api}/course/content/get', params=params)
 
