@@ -223,9 +223,8 @@ async def account_login(bot: Client, m: Message):
         else:
 
             token = creds.strip()
-            session.headers['x-access-token'] = token
-
-
+            session.headers['x-access-token'] = tokentoken
+            
             res = session.get(f'{api}/users/details')
 
             if res.status_code == 200:
