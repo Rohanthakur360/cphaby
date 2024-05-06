@@ -186,8 +186,8 @@ async def account_login(bot: Client, m: Message):
                             if res.status_code == 200:
                                 res_json = res.json()
 
-                                user_id = res['data']['user']['id']
-                                token = res['data']['token']
+                                user_id = res_json['data']['user']['id']
+                                token = res_json['data']['token']
 
                                 session.headers['x-access-token'] = token
 
