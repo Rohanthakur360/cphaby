@@ -303,12 +303,10 @@ async def account_login(bot: Client, m: Message):
                             html_file = f'assets/{get_datetime_str()}.html'
                             create_html_file(html_file, selected_course_name, course_content)
 
-                            await client.send_document(
-                                message.chat.id,
-                                html_file,
+                            await m.reply_document(
+                                document=html_file,
                                 caption=caption,
                                 file_name=f"{selected_course_name}.html",
-                                                                reply_to_message_id=reply.id
                             )
 
                             os.remove(text_file)
