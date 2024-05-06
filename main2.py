@@ -114,6 +114,7 @@ async def account_login(bot: Client, m: Message):
 
         api = 'https://api.classplusapp.com/v2'
 
+        # Send message to get credentials
         reply = await m.reply(
             (
                 '**'
