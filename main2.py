@@ -61,9 +61,8 @@ bot = Client(
 @bot.on_message(filters.command(["start"]))
 async def start(bot, update):
        await update.reply_text("Hi i am **Classplus txt Downloader**.\n\n"
-                              "**NOW:-** "
-                                       
-                                       "Press **/classplus** to continue..\n\n")
+                               "**NOW:-** "
+                               "Press **/classplus** to continue..\n\n")
 
 @bot.on_message(filters.command(["classplus"]))
 async def account_login(bot: Client, m: Message):
