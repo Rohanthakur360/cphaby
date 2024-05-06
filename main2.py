@@ -78,8 +78,8 @@ async def account_login(bot: Client, m: Message):
             res = session.get(f'{api}/course/content/get', params=params)
 
             if res.status_code == 200:
-                res = res.json()
-                contents = res['data']['courseContent']
+                res_json = res.json()
+                contents = res_json['data']['courseContent']
 
                 for content in contents:
                     if content['contentType'] == 1:
