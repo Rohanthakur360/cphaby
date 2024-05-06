@@ -19,7 +19,6 @@ import os
 import sys
 import re
 import requests
-
 from datetime import datetime
 
 def get_datetime_str():
