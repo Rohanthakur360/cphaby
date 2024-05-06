@@ -144,7 +144,7 @@ async def account_login(bot: Client, m: Message):
 
                 if res.status_code == 200:
                     res_json = res.json()
-                    org_id = int(res['data']['orgId'])
+                    org_id = int(res_json['data']['orgId'])
 
                     data = {
                         'countryExt': '91',
