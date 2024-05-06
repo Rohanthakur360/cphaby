@@ -260,8 +260,7 @@ async def account_login(bot: Client, m: Message):
                             'Send index number of the course to download.\n\n'
                             f'{text}'
                             '**'
-                        ),
-                        reply_to_message_id = reply.id
+                        )
                     )
 
                     if reply.text.isdigit() and len(reply.text) <= len(courses):
