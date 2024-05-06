@@ -266,9 +266,7 @@ async def account_login(bot: Client, m: Message):
                     if reply.text.isdigit() and len(reply.text) <= len(courses):
 
                         selected_course_index = int(reply.text.strip())
-
                         course = courses[selected_course_index - 1]
-
                         selected_course_id = course['id']
                         selected_course_name = course['name']
 
