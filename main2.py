@@ -57,6 +57,7 @@ bot = Client(
     bot_token=bot_token
 )
 
+# Handler for /start command
 @bot.on_message(filters.command(["start"]))
 async def start(bot, update):
        await update.reply_text("Hi i am **Classplus txt Downloader**.\n\n"
